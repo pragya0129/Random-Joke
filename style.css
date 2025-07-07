@@ -1,0 +1,95 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container styling */
+.container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Headings */
+.container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Joke Text Styling */
+#setup,
+#punchline {
+  display: none;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#setup {
+  background-color: #eaf4f4;
+  border-left: 4px solid #3498db;
+}
+
+#punchline {
+  background-color: #fff0f5;
+  border-left: 4px solid #e74c3c;
+}
+
+/* Button Styling */
+#generate {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 32px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#generate:hover {
+  background-color: #2980b9;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  #setup,
+  #punchline {
+    font-size: 0.95rem;
+  }
+
+  #generate {
+    width: 100%;
+  }
+}
